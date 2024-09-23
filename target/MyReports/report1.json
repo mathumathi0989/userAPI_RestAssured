@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.493" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Sample feature" name="Title of your scenario" time="0.215">
+<system-out><![CDATA[
+Given I want to write a step with precondition..............................passed
+When I complete action......................................................passed
+Then I validate the outcomes................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
