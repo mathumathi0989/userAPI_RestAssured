@@ -1,8 +1,6 @@
-#Author: your.email@your.domain.com
-Feature: Sample feature
+Feature: Sample API Testing
 
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    When I complete action
-    Then I validate the outcomes
+  Scenario: Verify API status
+    Given I have the API endpoint
+    When I send a GET request to the API
+    Then I should receive a successful response

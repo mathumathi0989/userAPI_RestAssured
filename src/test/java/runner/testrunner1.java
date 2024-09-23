@@ -9,9 +9,7 @@ glue= {"stepdefinition","hooks"},
 plugin={"pretty",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-		"html:target/cucumber-reports/dsalgo.html","json:target/MyReports/report.json",
-		"html:target/MyReports/report2.json","junit:target/MyReports/report1.json",
-		"timeline:test-output-thread/"}
+		"html:target/cucumber-reports/restassured-api-testreport.html"}
 		)
 
 public class testrunner1 extends AbstractTestNGCucumberTests {
