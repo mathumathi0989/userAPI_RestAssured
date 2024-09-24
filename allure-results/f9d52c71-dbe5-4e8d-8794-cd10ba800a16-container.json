@@ -1,0 +1,1 @@
+{"uuid":"f9d52c71-dbe5-4e8d-8794-cd10ba800a16","name":"Scenario: Verify API status","children":["dd599201-7b50-4e4d-847e-87c41cdc21b3"],"befores":[{"name":"hooks.hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1727194805030,"stop":1727194805031}],"afters":[],"start":1727194805029,"stop":1727194805235}
