@@ -52,7 +52,7 @@ public class getalltest {
     	
     	 String responseBody = response.asString();
          System.out.println("Response Body as String: " + responseBody);
-      //   System.out.println("Actual Status Code in the response is : " + response.getStatusCode());
+         System.out.println("Actual Status Code in the response is : " + response.getStatusCode());
        //  System.out.println("Actual Status Line in the response is : " + response.getStatusLine());
 
         int statusCode = Integer.parseInt(statusCodeStr); 
@@ -69,7 +69,7 @@ public class getalltest {
             System.out.println("Number of users: " + userCount);
             
         } else {
-            System.out.println("Failed to fetch users. Status Code: " + response.getStatusCode());
+          //  System.out.println("Failed to fetch users. Status Code: " + response.getStatusCode());
         }
     
        

@@ -1,0 +1,1 @@
+{"uuid":"689c66c6-9835-4575-83de-7b4febd1ba61","name":"Scenario: Get User by First Name","children":["ceb5906a-b701-4265-b00c-fa7613792c32"],"befores":[{"name":"hooks.hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1727321827133,"stop":1727321827133}],"afters":[],"start":1727321827132,"stop":1727321827470}

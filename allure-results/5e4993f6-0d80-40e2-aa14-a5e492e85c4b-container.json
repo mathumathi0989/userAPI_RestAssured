@@ -1,0 +1,1 @@
+{"uuid":"5e4993f6-0d80-40e2-aa14-a5e492e85c4b","name":"Scenario: Delete User by ID","children":["8250e6ec-6063-4936-a520-dda714f83d47"],"befores":[{"name":"hooks.hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1727306078172,"stop":1727306078172}],"afters":[],"start":1727306078172,"stop":1727306078435}

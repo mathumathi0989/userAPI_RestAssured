@@ -5,13 +5,12 @@ import static io.restassured.RestAssured.*;
 
 public class hooks {
 
-	@Before
+public static String baseURI;
+    
+    @Before
     public void setup() {
-        // Base URL setup
         baseURI = System.getProperty("baseUrl", "https://userserviceapp-f5a54828541b.herokuapp.com/uap");
-   
-	
-	}
+    }
 	
 	
 }

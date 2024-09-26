@@ -1,0 +1,1 @@
+{"uuid":"0062c3f1-9da2-4bde-94dd-4634ee7ac8b1","name":"Scenario: Create User","children":["4a1384ee-794b-4725-a89d-34b34be53a5b"],"befores":[{"name":"hooks.hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1727360278007,"stop":1727360278007}],"afters":[],"start":1727360278006,"stop":1727360280435}
