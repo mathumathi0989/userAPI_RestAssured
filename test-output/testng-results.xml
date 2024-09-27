@@ -89,26 +89,26 @@
       <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-09-27T14:42:00 EDT" name="Default suite" finished-at="2024-09-27T14:42:31 EDT" duration-ms="30960">
+  <suite started-at="2024-09-27T18:24:36 EDT" name="Default suite" finished-at="2024-09-27T18:25:07 EDT" duration-ms="30564">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-09-27T14:42:00 EDT" name="Default test" finished-at="2024-09-27T14:42:31 EDT" duration-ms="30960">
+    <test started-at="2024-09-27T18:24:36 EDT" name="Default test" finished-at="2024-09-27T18:25:07 EDT" duration-ms="30564">
       <class name="runner.testrunner1">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T14:42:00 EDT" name="setUpClass" finished-at="2024-09-27T14:42:01 EDT" duration-ms="834" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T18:24:36 EDT" name="setUpClass" finished-at="2024-09-27T18:24:37 EDT" duration-ms="844" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@12418d3f]]>
+                <![CDATA[org.testng.TestRunner@dcc7d1c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T14:42:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T14:42:30 EDT" duration-ms="29411" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T18:24:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T18:25:07 EDT" duration-ms="29388" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -187,7 +187,7 @@ Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 |
 Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at stepdefinition.createUsertest.tearDown(createUsertest.java:215)
+at stepdefinition.createUsertest.tearDown(createUsertest.java:234)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
@@ -281,7 +281,7 @@ at stepdefinition.createUsertest.tearDown(createUsertest.java:215)
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T14:42:30 EDT" name="tearDownClass" finished-at="2024-09-27T14:42:31 EDT" duration-ms="658" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T18:25:07 EDT" name="tearDownClass" finished-at="2024-09-27T18:25:07 EDT" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

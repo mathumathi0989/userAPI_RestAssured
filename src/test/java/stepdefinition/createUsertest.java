@@ -17,6 +17,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import config.ConfigProperties;
 import config.ExcelUtil;
+import config.LoggerLoad;
 import hooks.hooks;
 import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
@@ -32,7 +33,7 @@ public class createUsertest {
     private ConfigProperties config;
     private Response response;
     private SoftAssert softAssert = new SoftAssert(); // Initialize SoftAssert
-    
+    private String userId;
     // Extent Reports
     private static ExtentReports extentReports;
     private ExtentTest extentTest;
@@ -154,10 +155,28 @@ public class createUsertest {
              
              System.out.println(successMessage);
             if (response.statusCode() == 201) {
-                String userId = response.jsonPath().getString("user_id");
+                 userId = response.jsonPath().getString("user_id");
                 response.then().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/createUserSchema.json"));
                 System.out.println("------------------------- User ID created: " + userId + " ---------------------------");
                 storeUserData(response);
+              //  if (userId == null || userId.isEmpty()) {
+        	    //    throw new IllegalArgumentException("userId cannot be null or empty");
+        	    //}
+        	    
+        	    System.out.println("Attempting to delete user with ID: " + userId);
+        	    System.out.println("DELETE endpoint: " + hooks.baseURI + "/deleteuser/{userId}");
+
+        	    response = given()
+        	        .auth().basic(config.getUsername(), config.getPassword())
+        	        .pathParam("userId", userId)
+        	        .when()
+        	        .delete(hooks.baseURI + "/deleteuser/{userId}")
+        	        .then()
+        	        .extract().response();
+        	    response.then().statusCode(200).body("message", equalTo("User is deleted successfully"));
+        		LoggerLoad.info("validated status message");
+    	
+    	
             }
         }
     }
@@ -217,5 +236,10 @@ public class createUsertest {
         extentReports.flush();
     }
     
+  	
+	
+
+
+	
   
 }
