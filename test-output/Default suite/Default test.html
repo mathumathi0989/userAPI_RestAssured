@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 26 10:35:14 EDT 2024</td>
+<td>Started on:</td><td>Fri Sep 27 14:42:00 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13295 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30960 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,35 +76,112 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get User by First Name", "User Service API Operations"</td>
-<td></td>
-<td>0</td>
-<td>runner.testrunner1@3aa078fd</td></tr>
-<tr>
-<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update User by ID", "User Service API Operations"</td>
-<td></td>
-<td>0</td>
-<td>runner.testrunner1@3aa078fd</td></tr>
-<tr>
-<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get All Users", "User Service API Operations"</td>
-<td></td>
-<td>5</td>
-<td>runner.testrunner1@3aa078fd</td></tr>
-<tr>
-<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get User by ID", "User Service API Operations"</td>
-<td></td>
-<td>0</td>
-<td>runner.testrunner1@3aa078fd</td></tr>
-<tr>
-<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete User by ID", "User Service API Operations"</td>
-<td></td>
-<td>1</td>
-<td>runner.testrunner1@3aa078fd</td></tr>
-<tr>
-<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create User", "User Service API Operations"</td>
-<td></td>
-<td>2</td>
-<td>runner.testrunner1@3aa078fd</td></tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate create user API with data from Excel", "Create User API"<br/>
+<a href="#Output-536771650" onClick='toggleBox("Output-536771650", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-536771650" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-536771650">
+Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only<br/>
+Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number<br/>
+Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number<br/>
+Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number<br/>
+Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number<br/>
+Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number<br/>
+Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+	Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.createUsertest.tearDown(createUsertest.java:215)
+</pre></div><a href='#' onClick='toggleBox("stack-trace536771650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace536771650'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+	Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.createUsertest.tearDown(createUsertest.java:215)
+</pre></div></td>
+<td>29</td>
+<td>runner.testrunner1@7642df8f</td></tr>
 </table><p>
 </body>
 </html>

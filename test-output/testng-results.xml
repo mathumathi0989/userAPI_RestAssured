@@ -1,123 +1,287 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-09-26T10:35:14 EDT" name="Default suite" finished-at="2024-09-26T10:35:28 EDT" duration-ms="13295">
+  <suite started-at="2024-09-27T14:42:00 EDT" name="Default suite" finished-at="2024-09-27T14:42:31 EDT" duration-ms="30960">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@3aa078fd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-09-26T10:35:14 EDT" name="Default test" finished-at="2024-09-26T10:35:28 EDT" duration-ms="13295">
+    <test started-at="2024-09-27T14:42:00 EDT" name="Default test" finished-at="2024-09-27T14:42:31 EDT" duration-ms="30960">
       <class name="runner.testrunner1">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner1@3aa078fd]" started-at="2024-09-26T10:35:14 EDT" name="setUpClass" finished-at="2024-09-26T10:35:15 EDT" duration-ms="879" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T14:42:00 EDT" name="setUpClass" finished-at="2024-09-27T14:42:01 EDT" duration-ms="834" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@541897c6]]>
+                <![CDATA[org.testng.TestRunner@12418d3f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@3aa078fd]" started-at="2024-09-26T10:35:15 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-26T10:35:21 EDT" duration-ms="5555" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T14:42:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T14:42:30 EDT" duration-ms="29411" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Get All Users"]]>
+                <![CDATA["Validate create user API with data from Excel"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Service API Operations"]]>
+                <![CDATA["Create User API"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at stepdefinition.createUsertest.tearDown(createUsertest.java:215)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@3aa078fd]" started-at="2024-09-26T10:35:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-26T10:35:23 EDT" duration-ms="2731" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create User"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Service API Operations"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@3aa078fd]" started-at="2024-09-26T10:35:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-26T10:35:24 EDT" duration-ms="694" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Get User by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Service API Operations"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@3aa078fd]" started-at="2024-09-26T10:35:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-26T10:35:25 EDT" duration-ms="701" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Update User by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Service API Operations"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@3aa078fd]" started-at="2024-09-26T10:35:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-26T10:35:25 EDT" duration-ms="609" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Get User by First Name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Service API Operations"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@3aa078fd]" started-at="2024-09-26T10:35:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-26T10:35:27 EDT" duration-ms="1999" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Delete User by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Service API Operations"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner1@3aa078fd]" started-at="2024-09-26T10:35:27 EDT" name="tearDownClass" finished-at="2024-09-26T10:35:28 EDT" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T14:42:30 EDT" name="tearDownClass" finished-at="2024-09-27T14:42:31 EDT" duration-ms="658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

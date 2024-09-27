@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "user_first_name": {
+      "type": "string"
+    },
+    "user_last_name": {
+      "type": "string"
+    },
+    "user_contact_number": {
+      "type": "integer"
+    },
+    "user_email_id": {
+      "type": "string"
+    },
+    "userAddress": {
+      "type": "object",
+      "properties": {
+        "plotNumber": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "zipCode": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "plotNumber",
+        "street",
+        "state",
+        "country",
+        "zipCode"
+      ]
+    }
+  },
+  "required": [
+    "user_first_name",
+    "user_last_name",
+    "user_contact_number",
+    "user_email_id",
+    "userAddress"
+  ]
+}

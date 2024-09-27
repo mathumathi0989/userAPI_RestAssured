@@ -1,0 +1,1 @@
+Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id

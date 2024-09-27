@@ -4,12 +4,14 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 import java.util.Map;
 
 import org.testng.Assert;
 
 import config.ConfigProperties;
+import config.LoggerLoad;
 import hooks.hooks;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -48,6 +50,7 @@ public class userapiFlowtest {
 		String responseBody = response.asString();
 		System.out.println("Response Body as String: " + responseBody);
 		response.then().statusCode(statusCode);
+		LoggerLoad.info("validated status code");
 	}
 
 	@Then("validate the number of users")
@@ -55,6 +58,7 @@ public class userapiFlowtest {
 		initialUserCount = response.jsonPath().getList("users").size();
 		System.out.println("Total number of users : " + initialUserCount);
 		response.then().body("users.size()", greaterThan(0));
+		LoggerLoad.info("validated users count");
 
 	}
 
@@ -111,6 +115,7 @@ public class userapiFlowtest {
 	public void the_user_should_be_created_successfully() {
 		response.then().statusCode(201).body("user_first_name", equalTo(userData.get("user_first_name")))
 				.body("user_last_name", equalTo(userData.get("user_last_name")));
+		LoggerLoad.info("user created successfully");
 
 	}
 
@@ -121,6 +126,7 @@ public class userapiFlowtest {
 		System.out.println("Total number of user before creation " + initialUserCount);
 		System.out.println("Total number of user after creation " + newUserCount);
 		Assert.assertEquals(newUserCount, initialUserCount + 1);
+		LoggerLoad.info("After creation of user, total users count increase by 1");
 	}
 
 	@Given("I send a GET request to {string} with the stored user ID")
@@ -138,6 +144,7 @@ public class userapiFlowtest {
 
 		String responseBody = response.asString();
 		System.out.println("Response Body as String: " + responseBody);
+		LoggerLoad.info("Validated user details for the created userID");
 	}
 
 	@Given("I send a PUT request to {string} with user ID {string} and updated data:")
@@ -178,6 +185,7 @@ public class userapiFlowtest {
 				.body("user_last_name", equalTo(userData.get("up_user_last_name")))
 				.body("user_contact_number", equalTo(Long.valueOf(userData.get("up_user_contact_number"))))
 				.body("user_email_id", equalTo(userData.get("up_user_email_id")));
+		LoggerLoad.info("Validated user details for the updated userID");
 
 	}
 
@@ -197,6 +205,7 @@ public class userapiFlowtest {
 		assertEquals(storedFirstName, responseUserFirstName);
 		String responseBody = response.asString();
 		System.out.println("Response Body as String: " + responseBody);
+		LoggerLoad.info("Validated user details for the stored user first name");
 	}
 
 	@Given("I send a DELETE request to {string} with the stored user ID")
@@ -208,6 +217,7 @@ public class userapiFlowtest {
 	@Then("I should receive a valid response with status code 200 and message {string}")
 	public void i_should_receive_a_valid_response_with_status_code_and_message(String message) {
 		response.then().statusCode(200).body("message", equalTo(message));
+		LoggerLoad.info("validated status message");
 	}
 
 	@Then("the user count should be decreased by 1")
@@ -217,5 +227,6 @@ public class userapiFlowtest {
 		System.out.println("Total number of user before deleting " + newUserCount);
 		System.out.println("Total number of user after deleting " + updatedUserCount);
 		Assert.assertEquals(updatedUserCount, newUserCount - 1);
+		LoggerLoad.info("After deletion of user, total users count decreased by 1");
 	}
 }
