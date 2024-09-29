@@ -1,3 +1,4 @@
+config/LoggerLoad.class
 pojo/Address.class
 config/ConfigProperties.class
 config/ExcelUtil.class

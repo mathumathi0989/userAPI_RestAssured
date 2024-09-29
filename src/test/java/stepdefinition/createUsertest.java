@@ -159,10 +159,7 @@ public class createUsertest {
                 response.then().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/createUserSchema.json"));
                 System.out.println("------------------------- User ID created: " + userId + " ---------------------------");
                 storeUserData(response);
-              //  if (userId == null || userId.isEmpty()) {
-        	    //    throw new IllegalArgumentException("userId cannot be null or empty");
-        	    //}
-        	    
+          
         	    System.out.println("Attempting to delete user with ID: " + userId);
         	    System.out.println("DELETE endpoint: " + hooks.baseURI + "/deleteuser/{userId}");
 

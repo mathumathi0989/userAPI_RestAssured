@@ -1,1 +1,0 @@
-Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id

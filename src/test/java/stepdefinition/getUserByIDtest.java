@@ -175,8 +175,8 @@ public class getUserByIDtest {
 	}
 	
 	
-	@Then("Validate response with status code 200 and message {string}")
-	public void Validate_response_with_status_code_and_message(String message) {
+	@Then("Validate response with status code 200 and message {string} for get request")
+	public void Validate_response_with_status_code_and_message_for_get_request(String message) {
 		response.then().statusCode(200).body("message", equalTo(message));
 		LoggerLoad.info("validated status message");
 	}

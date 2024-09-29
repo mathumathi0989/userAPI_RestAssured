@@ -100,6 +100,7 @@ public class updateUsertest {
 		System.out.println("Response Body: " + responseBody);
 		response.then().statusCode(statusCode);
 		LoggerLoad.info("Validated status code " + statusCode);
+		
 	}
 
 	
@@ -281,6 +282,22 @@ public class updateUsertest {
         String actualEmailID = response.jsonPath().getString("user_email_id");
         response.then().body("user_email_id", equalTo(actualEmailID));
     }
+    
+    @When("Send DELETE to {string} with stored user ID")
+	public void send_delete_to_with_stored_user_id(String endpoint) {
+	 
+		response = given().auth().basic(config.getUsername(), config.getPassword()).pathParam("userId", storedUserId)
+				.when().delete(hooks.baseURI + endpoint).then().extract().response();
+	}
+	
+	
+	@Then("Validate status code 200 and message {string}")
+	public void Validate_status_code_and_message(String message) {
+		response.then().statusCode(200).body("message", equalTo(message));
+		LoggerLoad.info("validated status message");
+	}
+	
+	
 
     @After
     public void tearDown() {

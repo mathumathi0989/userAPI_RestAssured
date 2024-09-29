@@ -1,1 +1,0 @@
-Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200

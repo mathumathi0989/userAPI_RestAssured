@@ -1,1 +1,0 @@
-{"uuid":"067b4765-61ac-4250-917d-d2430397b46e","name":"Scenario: Create User to test delete scenario","children":["9a1e45ca-9b8b-4491-8e37-24ff3d8438e9"],"befores":[{"name":"hooks.hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1727452436736,"stop":1727452436743}],"afters":[],"start":1727452436732,"stop":1727452441065}

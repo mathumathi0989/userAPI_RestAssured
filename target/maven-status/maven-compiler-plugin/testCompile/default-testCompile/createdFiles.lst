@@ -1,6 +1,10 @@
+stepdefinition/getUserByFirstName.class
+stepdefinition/getUserByIDtest.class
+stepdefinition/sampletest.class
 runner/testrunner1.class
 stepdefinition/userapiFlowtest.class
+stepdefinition/deletUsertest.class
 stepdefinition/getalltest.class
 hooks/hooks.class
 stepdefinition/createUsertest.class
-stepdefinition/sampletest.class
+stepdefinition/updateUsertest.class

@@ -1,6 +1,10 @@
-/Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/restassured_bdd/src/test/java/hooks/hooks.java
-/Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/restassured_bdd/src/test/java/runner/testrunner1.java
-/Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/restassured_bdd/src/test/java/stepdefinition/createUsertest.java
-/Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/restassured_bdd/src/test/java/stepdefinition/getalltest.java
-/Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/restassured_bdd/src/test/java/stepdefinition/sampletest.java
-/Users/mathumathibalakrishnan/eclipse/Mathumathi_2024/restassured_bdd/src/test/java/stepdefinition/userapiFlowtest.java
+/Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/java/hooks/hooks.java
+/Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/java/runner/testrunner1.java
+/Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/java/stepdefinition/createUsertest.java
+/Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/java/stepdefinition/deletUsertest.java
+/Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/java/stepdefinition/getUserByFirstName.java
+/Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/java/stepdefinition/getUserByIDtest.java
+/Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/java/stepdefinition/getalltest.java
+/Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/java/stepdefinition/sampletest.java
+/Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/java/stepdefinition/updateUsertest.java
+/Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/java/stepdefinition/userapiFlowtest.java

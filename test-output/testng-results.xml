@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="47" passed="41" failed="6" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
@@ -88,27 +88,268 @@
     <line>
       <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
     </line>
+    <line>
+      <![CDATA[Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 200]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: firstName in integer | Expected status code: 400 but got: 404]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: empty firstName | Expected status code: 400 but got: 404]]>
+    </line>
+    <line>
+      <![CDATA[Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-09-27T18:24:36 EDT" name="Default suite" finished-at="2024-09-27T18:25:07 EDT" duration-ms="30564">
+  <suite started-at="2024-09-28T23:10:09 EDT" name="Default suite" finished-at="2024-09-28T23:11:34 EDT" duration-ms="85190">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-09-27T18:24:36 EDT" name="Default test" finished-at="2024-09-27T18:25:07 EDT" duration-ms="30564">
+    <test started-at="2024-09-28T23:10:09 EDT" name="Default test" finished-at="2024-09-28T23:11:34 EDT" duration-ms="85190">
       <class name="runner.testrunner1">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T18:24:36 EDT" name="setUpClass" finished-at="2024-09-27T18:24:37 EDT" duration-ms="844" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:09 EDT" name="setUpClass" finished-at="2024-09-28T23:10:10 EDT" duration-ms="950" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@dcc7d1c]]>
+                <![CDATA[org.testng.TestRunner@44f61a32]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T18:24:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T18:25:07 EDT" duration-ms="29388" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:16 EDT" duration-ms="6196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get All Users"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User API flow To test endpoints for creating, fetching, updating, and deleting users"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:16 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:18 EDT" duration-ms="2282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User API flow To test endpoints for creating, fetching, updating, and deleting users"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:19 EDT" duration-ms="589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get User by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User API flow To test endpoints for creating, fetching, updating, and deleting users"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:20 EDT" duration-ms="955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Update User by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User API flow To test endpoints for creating, fetching, updating, and deleting users"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:20 EDT" duration-ms="746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get User by First Name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User API flow To test endpoints for creating, fetching, updating, and deleting users"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:22 EDT" duration-ms="1693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete User by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User API flow To test endpoints for creating, fetching, updating, and deleting users"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:24 EDT" duration-ms="1436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list with GET ALL requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Get ALL users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:24 EDT" duration-ms="674" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list with GET ALL requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Get ALL users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:25 EDT" duration-ms="544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list with GET ALL requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Get ALL users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:26 EDT" duration-ms="1227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list with GET ALL requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Get ALL users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:27 EDT" duration-ms="673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list with GET ALL requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Get ALL users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:27 EDT" duration-ms="571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list with GET ALL requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Get ALL users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:28 EDT" duration-ms="572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list with GET ALL requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Get ALL users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:53 EDT" duration-ms="25502" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -117,7 +358,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Create User API"]]>
+                <![CDATA["Verify Create User API"]]>
               </value>
             </param>
           </params>
@@ -187,7 +428,7 @@ Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 |
 Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at stepdefinition.createUsertest.tearDown(createUsertest.java:234)
+at stepdefinition.createUsertest.tearDown(createUsertest.java:231)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
@@ -281,7 +522,654 @@ at stepdefinition.createUsertest.tearDown(createUsertest.java:234)
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-27T18:25:07 EDT" name="tearDownClass" finished-at="2024-09-27T18:25:07 EDT" duration-ms="269" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:54 EDT" duration-ms="680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create a user to test GET user by ID request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy GET user by ID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:55 EDT" duration-ms="591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy GET user by ID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:55 EDT" duration-ms="523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy GET user by ID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:56 EDT" duration-ms="571" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy GET user by ID API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Failure in scenario: empty userid | Expected status code: 400 but got: 404
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at stepdefinition.getUserByIDtest.validate_user_and_other_validations_for_scenario_name_as(getUserByIDtest.java:165)
+at ✽.Validate "400" and other user validations for scenario name as "empty userid"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/04_getUserByID.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:56 EDT" duration-ms="198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy GET user by ID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:56 EDT" duration-ms="522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy GET user by ID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:57 EDT" duration-ms="588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy GET user by ID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:58 EDT" duration-ms="537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy GET user by ID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:58 EDT" duration-ms="536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy GET user by ID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:59 EDT" duration-ms="557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["For Get Request By ID data clean up, Delete the user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy GET user by ID API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:59 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:59 EDT" duration-ms="529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create a user to test update request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Update User API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:59 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:23 EDT" duration-ms="23595" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate update user API with data from Excel"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Update User API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500,
+Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200,
+Failure in scenario: contentType | Expected status code: 415 but got: 200]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500,
+Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200,
+Failure in scenario: contentType | Expected status code: 415 but got: 200
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200]]>
+            </line>
+            <line>
+              <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:23 EDT" duration-ms="526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["For Data Cleanup, Delete the user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Update User API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:24 EDT" duration-ms="743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create a user to test get user by FirstName request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy get user by FirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:25 EDT" duration-ms="693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by firstName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy get user by FirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:25 EDT" duration-ms="514" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by firstName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy get user by FirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Failure in scenario: firstName in integer | Expected status code: 400 but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Failure in scenario: firstName in integer | Expected status code: 400 but got: 404
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
+at ✽.Validate "400" and user validations for get request as "firstName in integer"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Failure in scenario: firstName in integer | Expected status code: 400 but got: 404]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:26 EDT" duration-ms="574" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by firstName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy get user by FirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Failure in scenario: empty firstName | Expected status code: 400 but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Failure in scenario: empty firstName | Expected status code: 400 but got: 404
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
+at ✽.Validate "400" and user validations for get request as "empty firstName"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Failure in scenario: empty firstName | Expected status code: 400 but got: 404]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:26 EDT" duration-ms="173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by firstName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy get user by FirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:27 EDT" duration-ms="543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by firstName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy get user by FirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:27 EDT" duration-ms="525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by firstName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy get user by FirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:28 EDT" duration-ms="536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by firstName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy get user by FirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:28 EDT" duration-ms="504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user detail with GET request by firstName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy get user by FirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:29 EDT" duration-ms="542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["For Get Request By FirstName data clean up, Delete the user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy get user by FirstName API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:29 EDT" duration-ms="559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create a user to test delete request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Delete users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:30 EDT" duration-ms="504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list for DELETE requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Delete users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:30 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:30 EDT" duration-ms="517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list for DELETE requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Delete users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:30 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:31 EDT" duration-ms="655" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list for DELETE requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Delete users API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Failure in scenario: empty userid | Expected status code: 400 but got: 404
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at stepdefinition.deletUsertest.validate_and_other_data_validations(deletUsertest.java:168)
+at ✽.Validate "400" and other data validations for scenario name as "empty userid"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/07_deleteUserByID.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:31 EDT" duration-ms="172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list for DELETE requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Delete users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:32 EDT" duration-ms="518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list for DELETE requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Delete users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:32 EDT" duration-ms="508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list for DELETE requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Delete users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:33 EDT" duration-ms="518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list for DELETE requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Delete users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:33 EDT" duration-ms="554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user list for DELETE requests"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verfiy Delete users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:33 EDT" duration-ms="307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify API status"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sample API Testing"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:33 EDT" name="tearDownClass" finished-at="2024-09-28T23:11:34 EDT" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

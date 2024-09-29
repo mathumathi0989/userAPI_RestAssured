@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>41/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 27 18:24:36 EDT 2024</td>
+<td>Started on:</td><td>Sat Sep 28 23:10:09 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30564 ms)</td>
+<tr><td>Total time:</td><td>85 seconds (85190 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,11 +76,152 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate create user API with data from Excel", "Create User API"<br/>
-<a href="#Output-907698574" onClick='toggleBox("Output-907698574", this, "Show output", "Hide output");'>Show output</a>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"<br/>
+<a href="#Output-957239610" onClick='toggleBox("Output-957239610", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-907698574" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-907698574">
+<a href="#Output-957239610" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-957239610">
+Failure in scenario: firstName in integer | Expected status code: 400 but got: 404<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: firstName in integer | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
+	at ✽.Validate &quot;400&quot; and user validations for get request as &quot;firstName in integer&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace957239610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace957239610'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: firstName in integer | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
+	at ✽.Validate &quot;400&quot; and user validations for get request as &quot;firstName in integer&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"<br/>
+<a href="#Output-1335435008" onClick='toggleBox("Output-1335435008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1335435008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1335435008">
+Failure in scenario: empty userid | Expected status code: 400 but got: 404<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty userid | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.getUserByIDtest.validate_user_and_other_validations_for_scenario_name_as(getUserByIDtest.java:165)
+	at ✽.Validate &quot;400&quot; and other user validations for scenario name as &quot;empty userid&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/04_getUserByID.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1335435008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1335435008'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty userid | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.getUserByIDtest.validate_user_and_other_validations_for_scenario_name_as(getUserByIDtest.java:165)
+	at ✽.Validate &quot;400&quot; and other user validations for scenario name as &quot;empty userid&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/04_getUserByID.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate update user API with data from Excel", "Verify Update User API"<br/>
+<a href="#Output-1637399234" onClick='toggleBox("Output-1637399234", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1637399234" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1637399234">
+Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only<br/>
+Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user<br/>
+Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user<br/>
+Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user<br/>
+Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500<br/>
+Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200<br/>
+Failure in scenario: contentType | Expected status code: 415 but got: 200<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+	Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500,
+	Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200,
+	Failure in scenario: contentType | Expected status code: 415 but got: 200
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1637399234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1637399234'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+	Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500,
+	Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200,
+	Failure in scenario: contentType | Expected status code: 415 but got: 200
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
+</pre></div></td>
+<td>23</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"<br/>
+<a href="#Output-1224483735" onClick='toggleBox("Output-1224483735", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1224483735" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1224483735">
+Failure in scenario: empty firstName | Expected status code: 400 but got: 404<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty firstName | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
+	at ✽.Validate &quot;400&quot; and user validations for get request as &quot;empty firstName&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1224483735", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1224483735'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty firstName | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
+	at ✽.Validate &quot;400&quot; and user validations for get request as &quot;empty firstName&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"<br/>
+<a href="#Output-1811340317" onClick='toggleBox("Output-1811340317", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1811340317" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1811340317">
+Failure in scenario: empty userid | Expected status code: 400 but got: 404<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty userid | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.deletUsertest.validate_and_other_data_validations(deletUsertest.java:168)
+	at ✽.Validate &quot;400&quot; and other data validations for scenario name as &quot;empty userid&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/07_deleteUserByID.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1811340317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1811340317'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty userid | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.deletUsertest.validate_and_other_data_validations(deletUsertest.java:168)
+	at ✽.Validate &quot;400&quot; and other data validations for scenario name as &quot;empty userid&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/07_deleteUserByID.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate create user API with data from Excel", "Verify Create User API"<br/>
+<a href="#Output-2881012" onClick='toggleBox("Output-2881012", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2881012" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2881012">
 Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
 Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only<br/>
 Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
@@ -144,9 +285,9 @@ Failure in scenario: contentType | Expected status code: 415 but got: 409 | Erro
 	Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at stepdefinition.createUsertest.tearDown(createUsertest.java:234)
-</pre></div><a href='#' onClick='toggleBox("stack-trace907698574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace907698574'><pre>java.lang.AssertionError: The following asserts failed:
+	at stepdefinition.createUsertest.tearDown(createUsertest.java:231)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2881012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2881012'><pre>java.lang.AssertionError: The following asserts failed:
 	Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
 	Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
 	Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
@@ -178,9 +319,223 @@ Failure in scenario: contentType | Expected status code: 415 but got: 409 | Erro
 	Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at stepdefinition.createUsertest.tearDown(createUsertest.java:234)
+	at stepdefinition.createUsertest.tearDown(createUsertest.java:231)
 </pre></div></td>
-<td>29</td>
+<td>25</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>1</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get All Users", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>6</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a user to test update request", "Verify Update User API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "For Data Cleanup, Delete the user", "Verify Update User API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a user to test get user by FirstName request", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "For Get Request By FirstName data clean up, Delete the user", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>1</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a user to test GET user by ID request", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>1</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "For Get Request By ID data clean up, Delete the user", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get User by First Name", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create User", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>2</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify API status", "Sample API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a user to test delete request", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>0</td>
 <td>runner.testrunner1@7642df8f</td></tr>
 </table><p>
 </body>
