@@ -1,69 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="47" passed="41" failed="6" skipped="0">
+<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 201]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: invalid endpoint | Expected status code: 404 but got: 500 | Error Status: 500]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: null endpoint | Expected status code: 404 but got: 500 | Error Status: 500]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 200]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: firstName in integer | Expected status code: 400 but got: 404]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: empty firstName | Expected status code: 400 but got: 404]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-09-30T13:17:22 EDT" name="Default suite" finished-at="2024-09-30T13:18:51 EDT" duration-ms="88478">
+  <suite started-at="2024-10-01T12:03:57 EDT" name="Default suite" finished-at="2024-10-01T12:04:04 EDT" duration-ms="6628">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-09-30T13:17:22 EDT" name="Default test" finished-at="2024-09-30T13:18:51 EDT" duration-ms="88478">
+    <test started-at="2024-10-01T12:03:57 EDT" name="Default test" finished-at="2024-10-01T12:04:04 EDT" duration-ms="6628">
       <class name="runner.testrunner1">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:22 EDT" name="setUpClass" finished-at="2024-09-30T13:17:23 EDT" duration-ms="923" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-10-01T12:03:57 EDT" name="setUpClass" finished-at="2024-10-01T12:03:58 EDT" duration-ms="848" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@240844b6]]>
+                <![CDATA[org.testng.TestRunner@13ddaffb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:29 EDT" duration-ms="6212" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-10-01T12:03:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-01T12:04:01 EDT" duration-ms="3298" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -76,10 +34,59 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <503>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <503>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at stepdefinition.userapiFlowtest.validate_the_number_of_users_and_status_code(userapiFlowtest.java:54)
+at ✽.validate the number of users and status code 200(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:32 EDT" duration-ms="2459" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-10-01T12:04:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-01T12:04:02 EDT" duration-ms="1035" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -92,10 +99,49 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <201> but was <503>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <503>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at stepdefinition.userapiFlowtest.validate_the_user_details_with_status_code_and_store_the_userId(userapiFlowtest.java:101)
+at ✽.validate the user details with status code 201 and store the userId(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:32 EDT" duration-ms="698" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-10-01T12:04:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-01T12:04:03 EDT" duration-ms="268" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -108,10 +154,49 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <503>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <503>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at stepdefinition.userapiFlowtest.verify_the_user_details_and_validate_response_with_status_code(userapiFlowtest.java:135)
+at ✽.verify the user details and validate response with status code 200(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:33 EDT" duration-ms="854" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-10-01T12:04:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-01T12:04:03 EDT" duration-ms="438" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -124,10 +209,49 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <503>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <503>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at stepdefinition.userapiFlowtest.validate_the_updated_user_details_with_status_code_and_store_the_firstname(userapiFlowtest.java:180)
+at ✽.validate the updated user details with status code 200 and store the firstname(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:34 EDT" duration-ms="717" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-10-01T12:04:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-01T12:04:03 EDT" duration-ms="107" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -140,10 +264,37 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[parameterValue cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: parameterValue cannot be null
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+at stepdefinition.userapiFlowtest.i_send_a_get_request_to_with_the_stored_user_first_name(userapiFlowtest.java:197)
+at ✽.I send a GET request to "/users/username/{firstname}" with the stored user first name(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:29)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:34 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:36 EDT" duration-ms="1795" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-10-01T12:04:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-01T12:04:04 EDT" duration-ms="329" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -156,812 +307,49 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:37 EDT" duration-ms="1360" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list with GET ALL requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Get ALL users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:38 EDT" duration-ms="721" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list with GET ALL requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Get ALL users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:38 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:38 EDT" duration-ms="573" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list with GET ALL requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Get ALL users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:38 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:40 EDT" duration-ms="1385" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list with GET ALL requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Get ALL users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:40 EDT" duration-ms="613" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list with GET ALL requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Get ALL users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:41 EDT" duration-ms="532" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list with GET ALL requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Get ALL users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:42 EDT" duration-ms="589" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list with GET ALL requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Get ALL users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:08 EDT" duration-ms="26325" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate create user API with data from Excel"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Create User API"]]>
-              </value>
-            </param>
-          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The following asserts failed:
-Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
-Failure in scenario: zipcode as empty | Expected status code: 400 but got: 201,
-Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <503>.
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
-Failure in scenario: zipcode as empty | Expected status code: 400 but got: 201,
-Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at stepdefinition.createUsertest.tearDown(createUsertest.java:231)
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <503>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at stepdefinition.userapiFlowtest.Validate_the_user_count_and_response_with_status_code_200_and_message(userapiFlowtest.java:230)
+at ✽.Validate the user count and response with status code 200 and message "User is deleted successfully"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:35)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
-            <line>
-              <![CDATA[Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 201]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:08 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:09 EDT" duration-ms="901" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create a user to test GET user by ID request"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy GET user by ID API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:10 EDT" duration-ms="845" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy GET user by ID API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:10 EDT" duration-ms="574" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy GET user by ID API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:11 EDT" duration-ms="591" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy GET user by ID API"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Failure in scenario: empty userid | Expected status code: 400 but got: 404
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at stepdefinition.getUserByIDtest.validate_user_and_other_validations_for_scenario_name_as(getUserByIDtest.java:165)
-at ✽.Validate "400" and other user validations for scenario name as "empty userid"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/04_getUserByID.feature:17)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:11 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:11 EDT" duration-ms="178" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy GET user by ID API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:11 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:12 EDT" duration-ms="525" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy GET user by ID API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:12 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:12 EDT" duration-ms="523" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy GET user by ID API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:12 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:13 EDT" duration-ms="602" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy GET user by ID API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:13 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:13 EDT" duration-ms="524" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy GET user by ID API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:13 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:14 EDT" duration-ms="628" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["For Get Request By ID data clean up, Delete the user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy GET user by ID API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:14 EDT" duration-ms="630" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create a user to test update request"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Update User API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:40 EDT" duration-ms="25085" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate update user API with data from Excel"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Update User API"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
-Failure in scenario: invalid endpoint | Expected status code: 404 but got: 500 | Error Status: 500,
-Failure in scenario: null endpoint | Expected status code: 404 but got: 500 | Error Status: 500,
-Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
-Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500,
-Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200,
-Failure in scenario: contentType | Expected status code: 415 but got: 200]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
-Failure in scenario: invalid endpoint | Expected status code: 404 but got: 500 | Error Status: 500,
-Failure in scenario: null endpoint | Expected status code: 404 but got: 500 | Error Status: 500,
-Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
-Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500,
-Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200,
-Failure in scenario: contentType | Expected status code: 415 but got: 200
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: invalid endpoint | Expected status code: 404 but got: 500 | Error Status: 500]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: null endpoint | Expected status code: 404 but got: 500 | Error Status: 500]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 200]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:40 EDT" duration-ms="543" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["For Data Cleanup, Delete the user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Update User API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:41 EDT" duration-ms="693" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create a user to test get user by FirstName request"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy get user by FirstName API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:41 EDT" duration-ms="560" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by firstName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy get user by FirstName API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:42 EDT" duration-ms="509" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by firstName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy get user by FirstName API"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Failure in scenario: firstName in integer | Expected status code: 400 but got: 404]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Failure in scenario: firstName in integer | Expected status code: 400 but got: 404
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
-at ✽.Validate "400" and user validations for get request as "firstName in integer"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Failure in scenario: firstName in integer | Expected status code: 400 but got: 404]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:42 EDT" duration-ms="598" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by firstName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy get user by FirstName API"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Failure in scenario: empty firstName | Expected status code: 400 but got: 404]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Failure in scenario: empty firstName | Expected status code: 400 but got: 404
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
-at ✽.Validate "400" and user validations for get request as "empty firstName"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Failure in scenario: empty firstName | Expected status code: 400 but got: 404]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:43 EDT" duration-ms="204" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by firstName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy get user by FirstName API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:43 EDT" duration-ms="510" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by firstName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy get user by FirstName API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:44 EDT" duration-ms="496" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by firstName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy get user by FirstName API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:44 EDT" duration-ms="653" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by firstName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy get user by FirstName API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:45 EDT" duration-ms="511" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user detail with GET request by firstName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy get user by FirstName API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:45 EDT" duration-ms="578" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["For Get Request By FirstName data clean up, Delete the user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy get user by FirstName API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:46 EDT" duration-ms="513" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create a user to test delete request"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Delete users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:46 EDT" duration-ms="517" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list for DELETE requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Delete users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:47 EDT" duration-ms="538" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list for DELETE requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Delete users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:48 EDT" duration-ms="549" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list for DELETE requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Delete users API"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Failure in scenario: empty userid | Expected status code: 400 but got: 404
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at stepdefinition.deletUsertest.validate_and_other_data_validations(deletUsertest.java:168)
-at ✽.Validate "400" and other data validations for scenario name as "empty userid"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/07_deleteUserByID.feature:17)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:48 EDT" duration-ms="159" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list for DELETE requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Delete users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:48 EDT" duration-ms="575" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list for DELETE requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Delete users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:49 EDT" duration-ms="533" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list for DELETE requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Delete users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:49 EDT" duration-ms="613" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list for DELETE requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Delete users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:50 EDT" duration-ms="491" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user list for DELETE requests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verfiy Delete users API"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:50 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:50 EDT" duration-ms="236" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify API status"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sample API Testing"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:50 EDT" name="tearDownClass" finished-at="2024-09-30T13:18:50 EDT" duration-ms="346" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-10-01T12:04:04 EDT" name="tearDownClass" finished-at="2024-10-01T12:04:04 EDT" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
