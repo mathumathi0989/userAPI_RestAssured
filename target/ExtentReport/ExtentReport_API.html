@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 1, 2024 12:03:57 PM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 1, 2024 06:02:30 PM</span></a>
 </li>
 </ul>
 </div>
@@ -86,7 +86,7 @@
           <div class="test-detail">
             <p class="name">User API flow To test endpoints for creating, fetching, updating, and deleting users</p>
             <p class="text-sm">
-              <span>12:03:58 PM</span> / <span>00:00:05:259</span>
+              <span>6:02:31 PM</span> / <span>00:00:04:782</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -95,9 +95,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">User API flow To test endpoints for creating, fetching, updating, and deleting users</h5>
-<span class='badge badge-success'>10.01.2024 12:03:58 PM</span>
-<span class='badge badge-danger'>10.01.2024 12:04:04 PM</span>
-<span class='badge badge-default'>00:00:05:259</span>
+<span class='badge badge-success'>10.01.2024 6:02:31 PM</span>
+<span class='badge badge-danger'>10.01.2024 6:02:35 PM</span>
+<span class='badge badge-default'>00:00:04:782</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -160,7 +160,7 @@ Expected status code <200> but was <503>.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinition.userapiFlowtest.validate_the_number_of_users_and_status_code(userapiFlowtest.java:54)
+	at stepdefinition.userapiFlowtest.validate_the_number_of_users_and_status_code(userapiFlowtest.java:108)
 	at ✽.validate the number of users and status code 200(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:6)
 </textarea>
       
@@ -214,7 +214,7 @@ Expected status code <201> but was <503>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinition.userapiFlowtest.validate_the_user_details_with_status_code_and_store_the_userId(userapiFlowtest.java:101)
+	at stepdefinition.userapiFlowtest.validate_the_user_details_with_status_code_and_store_the_userId(userapiFlowtest.java:124)
 	at ✽.validate the user details with status code 201 and store the userId(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:13)
 </textarea>
       
@@ -231,45 +231,14 @@ Expected status code <201> but was <503>.
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinition.userapiFlowtest.i_send_a_get_request_with_stored_user_id(java.lang.String)">
+              <div class="step fail-bg" >
                 <span>Given I send a GET request to "/user/{userId}" with the stored user ID</span>
-      <div>
+      <div>Step undefined
       </div>
               </div>
-              <div class="step fail-bg" title="stepdefinition.userapiFlowtest.verify_the_user_details_and_validate_response_with_status_code(int)">
+              <div class="step skip-bg" >
                 <span>Then verify the user details and validate response with status code 200</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <503>.
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinition.userapiFlowtest.verify_the_user_details_and_validate_response_with_status_code(userapiFlowtest.java:135)
-	at ✽.verify the user details and validate response with status code 200(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:18)
-</textarea>
-      
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -283,47 +252,121 @@ Expected status code <200> but was <503>.
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinition.userapiFlowtest.i_send_a_put_request_to_with_user_id_and_updated_data(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)">
+              <div class="step fail-bg" title="stepdefinition.userapiFlowtest.i_send_a_put_request_to_with_user_id_and_updated_data(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)">
                 <span>Given I send a PUT request to "/updateuser/{userId}" with user ID "<userId>" and updated data:</span>
       <div><table class='markup-table table '><tr><td>up_user_first_name</td><td>up_user_last_name</td><td>up_user_contact_number</td><td>up_user_email_id</td><td>plotNumber</td><td>street</td><td>state</td><td>country</td><td>zipCode</td></tr><tr><td>Mathuupdat</td><td>Balak</td><td>2987633377</td><td>jane.smith@mail.com</td><td>pl-39</td><td>Broadway</td><td>NY</td><td>USA</td><td>19001</td></tr></table>
       </div>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepdefinition.userapiFlowtest.validate_the_updated_user_details_with_status_code_and_store_the_firstname(int)">
-                <span>Then validate the updated user details with status code 200 and store the firstname</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <503>.
-
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: userId.
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1277)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinition.userapiFlowtest.validate_the_updated_user_details_with_status_code_and_store_the_firstname(userapiFlowtest.java:180)
-	at ✽.validate the updated user details with status code 200 and store the firstname(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:25)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1161)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:148)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy:180)
+	at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy)
+	at stepdefinition.userapiFlowtest.sendPutRequest(userapiFlowtest.java:62)
+	at stepdefinition.userapiFlowtest.i_send_a_put_request_to_with_user_id_and_updated_data(userapiFlowtest.java:134)
+	at ✽.I send a PUT request to "/updateuser/{userId}" with user ID "<userId>" and updated data:(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:22)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.userapiFlowtest.validate_the_updated_user_details_with_status_code_and_store_the_firstname(int)">
+                <span>Then validate the updated user details with status code 200 and store the firstname</span>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -337,33 +380,12 @@ Expected status code <200> but was <503>.
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step fail-bg" title="stepdefinition.userapiFlowtest.i_send_a_get_request_to_with_the_stored_user_first_name(java.lang.String)">
+              <div class="step fail-bg" >
                 <span>Given I send a GET request to "/users/username/{firstname}" with the stored user first name</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.IllegalArgumentException: parameterValue cannot be null
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
-	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
-	at stepdefinition.userapiFlowtest.i_send_a_get_request_to_with_the_stored_user_first_name(userapiFlowtest.java:197)
-	at ✽.I send a GET request to "/users/username/{firstname}" with the stored user first name(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:29)
-</textarea>
-      
+      <div>Step undefined
       </div>
               </div>
-              <div class="step skip-bg" title="stepdefinition.userapiFlowtest.validate_the_updated_user_details_for_the_stored_user_firstname_and_verify_response_with_status_code(int)">
+              <div class="step skip-bg" >
                 <span>Then validate the updated user details for the stored user firstname and verify response with status code 200</span>
       <div>Step skipped
       </div>
@@ -414,7 +436,7 @@ Expected status code <200> but was <503>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinition.userapiFlowtest.Validate_the_user_count_and_response_with_status_code_200_and_message(userapiFlowtest.java:230)
+	at stepdefinition.userapiFlowtest.Validate_the_user_count_and_response_with_status_code_200_and_message(userapiFlowtest.java:156)
 	at ✽.Validate the user count and response with status code 200 and message "User is deleted successfully"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:35)
 </textarea>
       
@@ -446,82 +468,6 @@ Expected status code <200> but was <503>.
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>5</span>
-</span>
-<p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>5 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:04:01 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='5'>Then validate the number of users and status code 200</a>
-<div class="">
-<span class="badge badge-default">User API flow To test endpoints for creating, fetching, updating, and deleting users.Get All Users.Then validate the number of users and status code 200</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:04:02 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='11'>Then validate the user details with status code 201 and store the userId</a>
-<div class="">
-<span class="badge badge-default">User API flow To test endpoints for creating, fetching, updating, and deleting users.Create User.Then validate the user details with status code 201 and store the userId</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:04:03 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='17'>Then verify the user details and validate response with status code 200</a>
-<div class="">
-<span class="badge badge-default">User API flow To test endpoints for creating, fetching, updating, and deleting users.Get User by ID.Then verify the user details and validate response with status code 200</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:04:03 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='23'>Then validate the updated user details with status code 200 and store the firstname</a>
-<div class="">
-<span class="badge badge-default">User API flow To test endpoints for creating, fetching, updating, and deleting users.Update User by ID.Then validate the updated user details with status code 200 and store the firstname</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:04:03 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='35'>Then Validate the user count and response with status code 200 and message "User is deleted successfully"</a>
-<div class="">
-<span class="badge badge-default">User API flow To test endpoints for creating, fetching, updating, and deleting users.Delete User by ID.Then Validate the user count and response with status code 200 and message "User is deleted successfully"</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">java.lang.IllegalArgumentException</p>
@@ -543,11 +489,67 @@ Expected status code <200> but was <503>.
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:04:03 PM</td>
+<td>18:02:35 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='28'>Given I send a GET request to "/users/username/{firstname}" with the stored user first name</a>
+<a href="#" class="linked" test-id='1' id='22'>Given I send a PUT request to "/updateuser/{userId}" with user ID "<userId>" and updated data:</a>
 <div class="">
-<span class="badge badge-default">User API flow To test endpoints for creating, fetching, updating, and deleting users.Get User by First Name.Given I send a GET request to "/users/username/{firstname}" with the stored user first name</span>
+<span class="badge badge-default">User API flow To test endpoints for creating, fetching, updating, and deleting users.Update User by ID.Given I send a PUT request to "/updateuser/{userId}" with user ID "<userId>" and updated data:</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:02:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>Then validate the number of users and status code 200</a>
+<div class="">
+<span class="badge badge-default">User API flow To test endpoints for creating, fetching, updating, and deleting users.Get All Users.Then validate the number of users and status code 200</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:02:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Then validate the user details with status code 201 and store the userId</a>
+<div class="">
+<span class="badge badge-default">User API flow To test endpoints for creating, fetching, updating, and deleting users.Create User.Then validate the user details with status code 201 and store the userId</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:02:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='35'>Then Validate the user count and response with status code 200 and message "User is deleted successfully"</a>
+<div class="">
+<span class="badge badge-default">User API flow To test endpoints for creating, fetching, updating, and deleting users.Delete User by ID.Then Validate the user count and response with status code 200 and message "User is deleted successfully"</span>
 </div>
 </td>
 </tr>
@@ -568,13 +570,13 @@ Expected status code <200> but was <503>.
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 1, 2024 12:03:57 PM</h3>
+<h3>Oct 1, 2024 06:02:30 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 1, 2024 12:04:04 PM</h3>
+<h3>Oct 1, 2024 06:02:35 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -645,10 +647,10 @@ Expected status code <200> but was <503>.
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='41%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='25%'><b>3</b> steps passed</small></div>
 <div>
 <small data-tooltip='50%'><b>6</b> steps failed,
-<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -664,7 +666,7 @@ Expected status code <200> but was <503>.
 </div></div>
 <script>
 var timeline = {
-"User API flow To test endpoints for creating, fetching, updating, and deleting users":5.259
+"User API flow To test endpoints for creating, fetching, updating, and deleting users":4.782
 };
 </script>
 <div class="row">
@@ -684,10 +686,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
+passGrandChild: 3,
 failGrandChild: 6,
 warningGrandChild: 0,
-skipGrandChild: 1,
+skipGrandChild: 3,
 infoGrandChild: 0,
 eventsCount: 5,
 };

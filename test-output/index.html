@@ -103,22 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.testrunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Get User by ID&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting us...)">runScenario("Get User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting us...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.testrunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Get All Users&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting use...)">runScenario("Get All Users", "User API flow To test endpoints for creating, fetching, updating, and deleting use...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runner.testrunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Create User&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting users...)">runScenario("Create User", "User API flow To test endpoints for creating, fetching, updating, and deleting users...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.testrunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Get User by First Name&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and del...)">runScenario("Get User by First Name", "User API flow To test endpoints for creating, fetching, updating, and del...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,7 +113,22 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.testrunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Get All Users&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting use...)">runScenario("Get All Users", "User API flow To test endpoints for creating, fetching, updating, and deleting use...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runner.testrunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Update User by ID&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting...)">runScenario("Update User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.testrunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Get User by First Name&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and del...)">runScenario("Get User by First Name", "User API flow To test endpoints for creating, fetching, updating, and del...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.testrunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Get User by ID&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting us...)">runScenario("Get User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting us...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -151,10 +151,51 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Get User by ID&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting us...)">
-                  </a> <!-- runScenario("Get User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting us...) -->
+                  <a name="runScenario(&quot;Create User&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting users...)">
+                  </a> <!-- runScenario("Create User", "User API flow To test endpoints for creating, fetching, updating, and deleting users...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Get User by ID","User API flow To test endpoints for creating, fetching, updating, and deleting users")</span>
+                  <span class="parameters">("Create User","User API flow To test endpoints for creating, fetching, updating, and deleting users")</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;503&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at stepdefinition.userapiFlowtest.validate_the_user_details_with_status_code_and_store_the_userId(userapiFlowtest.java:124)
+	at ✽.validate the user details with status code 201 and store the userId(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:13)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Delete User by ID&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting...)">
+                  </a> <!-- runScenario("Delete User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Delete User by ID","User API flow To test endpoints for creating, fetching, updating, and deleting users")</span>
                   <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;503&gt;.
 
@@ -182,8 +223,8 @@ Expected status code &lt;200&gt; but was &lt;503&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinition.userapiFlowtest.verify_the_user_details_and_validate_response_with_status_code(userapiFlowtest.java:135)
-	at ✽.verify the user details and validate response with status code 200(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:18)
+	at stepdefinition.userapiFlowtest.Validate_the_user_count_and_response_with_status_code_200_and_message(userapiFlowtest.java:156)
+	at ✽.Validate the user count and response with status code 200 and message &quot;User is deleted successfully&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:35)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -233,121 +274,8 @@ Expected status code &lt;200&gt; but was &lt;503&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinition.userapiFlowtest.validate_the_number_of_users_and_status_code(userapiFlowtest.java:54)
+	at stepdefinition.userapiFlowtest.validate_the_number_of_users_and_status_code(userapiFlowtest.java:108)
 	at ✽.validate the number of users and status code 200(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:6)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Create User&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting users...)">
-                  </a> <!-- runScenario("Create User", "User API flow To test endpoints for creating, fetching, updating, and deleting users...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Create User","User API flow To test endpoints for creating, fetching, updating, and deleting users")</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;503&gt;.
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinition.userapiFlowtest.validate_the_user_details_with_status_code_and_store_the_userId(userapiFlowtest.java:101)
-	at ✽.validate the user details with status code 201 and store the userId(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:13)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Get User by First Name&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and del...)">
-                  </a> <!-- runScenario("Get User by First Name", "User API flow To test endpoints for creating, fetching, updating, and del...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Get User by First Name","User API flow To test endpoints for creating, fetching, updating, and deleting users")</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: parameterValue cannot be null
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
-	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
-	at stepdefinition.userapiFlowtest.i_send_a_get_request_to_with_the_stored_user_first_name(userapiFlowtest.java:197)
-	at ✽.I send a GET request to &quot;/users/username/{firstname}&quot; with the stored user first name(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:29)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Delete User by ID&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting...)">
-                  </a> <!-- runScenario("Delete User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Delete User by ID","User API flow To test endpoints for creating, fetching, updating, and deleting users")</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;503&gt;.
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinition.userapiFlowtest.Validate_the_user_count_and_response_with_status_code_200_and_message(userapiFlowtest.java:230)
-	at ✽.Validate the user count and response with status code 200 and message &quot;User is deleted successfully&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:35)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -360,35 +288,233 @@ Expected status code &lt;200&gt; but was &lt;503&gt;.
                   </a> <!-- runScenario("Update User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Update User by ID","User API flow To test endpoints for creating, fetching, updating, and deleting users")</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;503&gt;.
-
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: userId.
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1277)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinition.userapiFlowtest.validate_the_updated_user_details_with_status_code_and_store_the_firstname(userapiFlowtest.java:180)
-	at ✽.validate the updated user details with status code 200 and store the firstname(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:25)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1161)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:148)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy:180)
+	at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy)
+	at stepdefinition.userapiFlowtest.sendPutRequest(userapiFlowtest.java:62)
+	at stepdefinition.userapiFlowtest.i_send_a_put_request_to_with_user_id_and_updated_data(userapiFlowtest.java:134)
+	at ✽.I send a PUT request to &quot;/updateuser/{userId}&quot; with user ID &quot;&lt;userId&gt;&quot; and updated data:(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/01_userapiFlow.feature:22)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get User by First Name&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and del...)">
+                  </a> <!-- runScenario("Get User by First Name", "User API flow To test endpoints for creating, fetching, updating, and del...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get User by First Name","User API flow To test endpoints for creating, fetching, updating, and deleting users")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;I send a GET request to &quot;/users/username/{firstname}&quot; with the stored user first name&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I send a GET request to {string} with the stored user first name&quot;)
+public void i_send_a_get_request_to_with_the_stored_user_first_name(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;validate the updated user details for the stored user firstname and verify response with status code {int}&quot;)
+public void validate_the_updated_user_details_for_the_stored_user_firstname_and_verify_response_with_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get User by ID&quot;, &quot;User API flow To test endpoints for creating, fetching, updating, and deleting us...)">
+                  </a> <!-- runScenario("Get User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting us...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get User by ID","User API flow To test endpoints for creating, fetching, updating, and deleting users")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;I send a GET request to &quot;/user/{userId}&quot; with the stored user ID&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I send a GET request to {string} with the stored user ID&quot;)
+public void i_send_a_get_request_to_with_the_stored_user_id(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;verify the user details and validate response with status code {int}&quot;)
+public void verify_the_user_details_and_validate_response_with_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -400,7 +526,7 @@ Expected status code &lt;200&gt; but was &lt;503&gt;.
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/14/9snw41b17dgf350s9rf9t0780000gp/T/testng-eclipse-1993749469/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/14/9snw41b17dgf350s9rf9t0780000gp/T/testng-eclipse-657236671/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -461,32 +587,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.testrunner1')
-data.setCell(0, 3, 3298);
+data.setCell(0, 3, 3092);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.testrunner1')
-data.setCell(1, 3, 1035);
+data.setCell(1, 3, 997);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runner.testrunner1')
-data.setCell(2, 3, 438);
+data.setCell(2, 3, 371);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runner.testrunner1')
-data.setCell(3, 3, 329);
+data.setCell(3, 3, 306);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'runner.testrunner1')
-data.setCell(4, 3, 268);
+data.setCell(4, 3, 128);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'runner.testrunner1')
-data.setCell(5, 3, 107);
+data.setCell(5, 3, 94);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -514,48 +640,48 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.testrunner1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@13ddaffb)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@5cf3a7f9)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Get All Users", "User API flow To test endpoints for creating, fetching, updating, and deleting use...)</span>
-                <span class="method-start">862 ms</span>
+                <span class="method-start">860 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Create User", "User API flow To test endpoints for creating, fetching, updating, and deleting users...)</span>
-                <span class="method-start">4177 ms</span>
+                <span class="method-start">3971 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Get User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting us...)</span>
-                <span class="method-start">5220 ms</span>
+                <span class="method-start">4976 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Update User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting...)</span>
-                <span class="method-start">5491 ms</span>
+                <span class="method-start">5112 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Get User by First Name", "User API flow To test endpoints for creating, fetching, updating, and del...)</span>
-                <span class="method-start">5938 ms</span>
+                <span class="method-start">5495 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Delete User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting...)</span>
-                <span class="method-start">6048 ms</span>
+                <span class="method-start">5592 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">6406 ms</span>
+                <span class="method-start">5920 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
