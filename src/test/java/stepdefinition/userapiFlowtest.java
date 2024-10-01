@@ -62,14 +62,13 @@ public class userapiFlowtest {
 
 	}
 
-	@When("I store the userId from the POST response")
+	@Then("I store the userId from the POST response")
 	public void i_store_the_userId_from_the_post_response() {
-		// Extract and store the userId from the response
 		storedUserId = response.jsonPath().getInt("user_id");
 		System.out.println("User id for the newly created user is " + storedUserId);
 	}
 
-	@When("I store the firstname from the PUT response")
+	@Then("I store the firstname from the PUT response")
 	public void i_store_the_firstname_from_the_put_response() {
 
 		storedFirstName = response.jsonPath().getString("user_first_name");
@@ -79,23 +78,21 @@ public class userapiFlowtest {
 
 	@Given("I send a POST request to {string} with the following data:")
 	public void i_send_a_post_request_to_with_the_following_data(String endpoint, DataTable dataTable) {
-		// Convert the DataTable into a List of Maps
+	
 		List<Map<String, String>> dataList = dataTable.asMaps(String.class, String.class);
 
-		// Assuming there's only one row of data
 		if (!dataList.isEmpty()) {
 			userData = dataList.get(0);
 
 			User user = new User();
 			Address address = new Address();
 
-			// Set user details
 			user.setUser_first_name(userData.get("user_first_name"));
 			user.setUser_last_name(userData.get("user_last_name"));
 			user.setUser_contact_number(userData.get("user_contact_number"));
 			user.setUser_email_id(userData.get("user_email_id"));
 
-			// Set address details
+	
 			address.setPlotNumber(userData.get("plotNumber"));
 			address.setStreet(userData.get("street"));
 			address.setState(userData.get("state"));
@@ -138,7 +135,6 @@ public class userapiFlowtest {
 
 	@Then("the response should contain the correct user details for the stored user ID")
 	public void the_response_should_contain_the_correct_user_details_for_the_stored_user_ID() {
-		// response.then().statusCode(200).body("userId", equalTo(userId));
 		int responseUserId = response.jsonPath().getInt("user_id");
 		assertEquals(storedUserId, responseUserId);
 
@@ -151,7 +147,6 @@ public class userapiFlowtest {
 	public void i_send_a_put_request_to_with_user_id_and_updated_data(String endpoint, String userId,
 			DataTable dataTable1) {
 		List<Map<String, String>> dataList1 = dataTable1.asMaps(String.class, String.class);
-		// Assuming there's only one row of data
 		if (!dataList1.isEmpty()) {
 			userData = dataList1.get(0);
 		}
@@ -159,13 +154,11 @@ public class userapiFlowtest {
 		User user = new User();
 		Address address = new Address();
 
-		// Set user details
 		user.setUser_first_name(userData.get("up_user_first_name"));
 		user.setUser_last_name(userData.get("up_user_last_name"));
 		user.setUser_contact_number(userData.get("up_user_contact_number"));
 		user.setUser_email_id(userData.get("up_user_email_id"));
 
-		// Set address details
 		address.setPlotNumber(userData.get("plotNumber"));
 		address.setStreet(userData.get("street"));
 		address.setState(userData.get("state"));
@@ -198,7 +191,6 @@ public class userapiFlowtest {
 
 	@Then("the response should contain the correct user details for the stored user first name")
 	public void the_response_should_contain_the_correct_user_details_for_the_stored_user_first_name() {
-		// response.then().statusCode(200).body("user_first_name", equalTo(firstName));
 		String responseUserFirstName = response.jsonPath().getString("[0].user_first_name");
 		System.out.println("check   responseUserFirstName " + responseUserFirstName);
 		System.out.println("check    storedFirstName " + storedFirstName);

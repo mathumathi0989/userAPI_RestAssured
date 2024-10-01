@@ -25,7 +25,7 @@ public class getalltest {
 
 	    @Given("^Base URL is set$")
 	    public void base_url_is_set() {
-	        // Set the baseURI from hooks class
+	     
 	        baseURI = hooks.baseURI; // Fetching baseURI from hooks
 	     //   LoggerLoad.info("Base URL is set to: " + baseURI);
 	    }

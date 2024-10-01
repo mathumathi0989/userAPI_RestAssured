@@ -112,7 +112,7 @@ public class updateUsertest {
     @When("I send a PUT request with user data from all Excel rows")
     public void i_send_a_put_request_with_user_data_from_all_excel_rows() {
         // Fetch data from Excel file for all rows
-        String filePath = "src/test/resources/excelData/UpdateData.xlsx";
+        String filePath = "src/test/resources/excelData/InputData.xlsx";
         List<Map<String, String>> allData = ExcelUtil.getAllExcelData(filePath, "PUT");
 
         for (Map<String, String> data : allData) {

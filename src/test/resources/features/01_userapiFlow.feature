@@ -13,7 +13,7 @@ Feature: User API flow To test endpoints for creating, fetching, updating, and d
    Then I should receive a valid response with status code 201
     And the user should be created successfully
     And the user count should be increased by 1
-    When I store the userId from the POST response
+    Then I store the userId from the POST response
   
   Scenario: Get User by ID
     Given I send a GET request to "/user/{userId}" with the stored user ID
@@ -26,7 +26,7 @@ Feature: User API flow To test endpoints for creating, fetching, updating, and d
       | Mathuupdat            | Balak               | 2987633377           | jane.smith@mail.com         |pl-39      | Broadway | NY    | USA       | 19001  |
     Then I should receive a valid response with status code 200
     And the response should contain the updated user details
-    When I store the firstname from the PUT response
+    Then I store the firstname from the PUT response
   
   Scenario: Get User by First Name
     Given I send a GET request to "/users/username/{firstname}" with the stored user first name

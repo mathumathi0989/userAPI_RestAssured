@@ -2,88 +2,10 @@
 <testng-results ignored="0" total="47" passed="41" failed="6" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
       <![CDATA[Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
     </line>
     <line>
-      <![CDATA[Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-    </line>
-    <line>
-      <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+      <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 201]]>
     </line>
     <line>
       <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
@@ -95,10 +17,10 @@
       <![CDATA[Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
     </line>
     <line>
-      <![CDATA[Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
+      <![CDATA[Failure in scenario: invalid endpoint | Expected status code: 404 but got: 500 | Error Status: 500]]>
     </line>
     <line>
-      <![CDATA[Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
+      <![CDATA[Failure in scenario: null endpoint | Expected status code: 404 but got: 500 | Error Status: 500]]>
     </line>
     <line>
       <![CDATA[Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
@@ -122,26 +44,26 @@
       <![CDATA[Failure in scenario: empty userid | Expected status code: 400 but got: 404]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-09-28T23:10:09 EDT" name="Default suite" finished-at="2024-09-28T23:11:34 EDT" duration-ms="85190">
+  <suite started-at="2024-09-30T13:17:22 EDT" name="Default suite" finished-at="2024-09-30T13:18:51 EDT" duration-ms="88478">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-09-28T23:10:09 EDT" name="Default test" finished-at="2024-09-28T23:11:34 EDT" duration-ms="85190">
+    <test started-at="2024-09-30T13:17:22 EDT" name="Default test" finished-at="2024-09-30T13:18:51 EDT" duration-ms="88478">
       <class name="runner.testrunner1">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:09 EDT" name="setUpClass" finished-at="2024-09-28T23:10:10 EDT" duration-ms="950" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:22 EDT" name="setUpClass" finished-at="2024-09-30T13:17:23 EDT" duration-ms="923" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@44f61a32]]>
+                <![CDATA[org.testng.TestRunner@240844b6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:16 EDT" duration-ms="6196" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:29 EDT" duration-ms="6212" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -157,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:16 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:18 EDT" duration-ms="2282" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:32 EDT" duration-ms="2459" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -173,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:19 EDT" duration-ms="589" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:32 EDT" duration-ms="698" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -189,7 +111,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:20 EDT" duration-ms="955" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:33 EDT" duration-ms="854" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -205,7 +127,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:20 EDT" duration-ms="746" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:34 EDT" duration-ms="717" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:22 EDT" duration-ms="1693" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:34 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:36 EDT" duration-ms="1795" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -237,7 +159,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:24 EDT" duration-ms="1436" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:37 EDT" duration-ms="1360" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -253,7 +175,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:24 EDT" duration-ms="674" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:38 EDT" duration-ms="721" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -269,7 +191,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:25 EDT" duration-ms="544" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:38 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:38 EDT" duration-ms="573" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -285,7 +207,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:26 EDT" duration-ms="1227" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:38 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:40 EDT" duration-ms="1385" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -301,7 +223,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:27 EDT" duration-ms="673" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:40 EDT" duration-ms="613" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -317,7 +239,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:27 EDT" duration-ms="571" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:41 EDT" duration-ms="532" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -333,7 +255,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:28 EDT" duration-ms="572" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:17:42 EDT" duration-ms="589" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -349,7 +271,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:53 EDT" duration-ms="25502" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:17:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:08 EDT" duration-ms="26325" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -365,66 +287,14 @@
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
 Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
-Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
-Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
-Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
-Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
-Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
-Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: zipcode as empty | Expected status code: 400 but got: 201,
 Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
 Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
-Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
-Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
-Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
-Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
-Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
-Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
-Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+Failure in scenario: zipcode as empty | Expected status code: 400 but got: 201,
 Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
@@ -434,95 +304,17 @@ at stepdefinition.createUsertest.tearDown(createUsertest.java:231)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
               <![CDATA[Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
             </line>
             <line>
-              <![CDATA[Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
-            </line>
-            <line>
-              <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
+              <![CDATA[Failure in scenario: zipcode as empty | Expected status code: 400 but got: 201]]>
             </line>
             <line>
               <![CDATA[Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:54 EDT" duration-ms="680" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:08 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:09 EDT" duration-ms="901" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -538,7 +330,7 @@ at stepdefinition.createUsertest.tearDown(createUsertest.java:231)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:55 EDT" duration-ms="591" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:10 EDT" duration-ms="845" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -554,7 +346,7 @@ at stepdefinition.createUsertest.tearDown(createUsertest.java:231)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:55 EDT" duration-ms="523" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:10 EDT" duration-ms="574" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -570,7 +362,7 @@ at stepdefinition.createUsertest.tearDown(createUsertest.java:231)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:56 EDT" duration-ms="571" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:11 EDT" duration-ms="591" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -594,7 +386,7 @@ Failure in scenario: empty userid | Expected status code: 400 but got: 404
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 at stepdefinition.getUserByIDtest.validate_user_and_other_validations_for_scenario_name_as(getUserByIDtest.java:165)
-at ✽.Validate "400" and other user validations for scenario name as "empty userid"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/04_getUserByID.feature:17)
+at ✽.Validate "400" and other user validations for scenario name as "empty userid"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/04_getUserByID.feature:17)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
@@ -604,7 +396,7 @@ at ✽.Validate "400" and other user validations for scenario name as "empty use
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:56 EDT" duration-ms="198" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:11 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:11 EDT" duration-ms="178" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -620,7 +412,7 @@ at ✽.Validate "400" and other user validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:56 EDT" duration-ms="522" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:11 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:12 EDT" duration-ms="525" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -636,7 +428,7 @@ at ✽.Validate "400" and other user validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:57 EDT" duration-ms="588" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:12 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:12 EDT" duration-ms="523" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -652,7 +444,7 @@ at ✽.Validate "400" and other user validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:58 EDT" duration-ms="537" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:12 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:13 EDT" duration-ms="602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -668,7 +460,7 @@ at ✽.Validate "400" and other user validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:58 EDT" duration-ms="536" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:13 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:13 EDT" duration-ms="524" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -684,7 +476,7 @@ at ✽.Validate "400" and other user validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:59 EDT" duration-ms="557" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:13 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:14 EDT" duration-ms="628" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -700,7 +492,7 @@ at ✽.Validate "400" and other user validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:59 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:10:59 EDT" duration-ms="529" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:14 EDT" duration-ms="630" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -716,7 +508,7 @@ at ✽.Validate "400" and other user validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:10:59 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:23 EDT" duration-ms="23595" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:40 EDT" duration-ms="25085" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -733,8 +525,8 @@ at ✽.Validate "400" and other user validations for scenario name as "empty use
             <message>
               <![CDATA[The following asserts failed:
 Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
-Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
-Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+Failure in scenario: invalid endpoint | Expected status code: 404 but got: 500 | Error Status: 500,
+Failure in scenario: null endpoint | Expected status code: 404 but got: 500 | Error Status: 500,
 Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
 Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500,
 Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200,
@@ -743,8 +535,8 @@ Failure in scenario: contentType | Expected status code: 415 but got: 200]]>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
 Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
-Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
-Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+Failure in scenario: invalid endpoint | Expected status code: 404 but got: 500 | Error Status: 500,
+Failure in scenario: null endpoint | Expected status code: 404 but got: 500 | Error Status: 500,
 Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
 Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500,
 Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200,
@@ -760,10 +552,10 @@ at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
               <![CDATA[Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only]]>
             </line>
             <line>
-              <![CDATA[Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
+              <![CDATA[Failure in scenario: invalid endpoint | Expected status code: 404 but got: 500 | Error Status: 500]]>
             </line>
             <line>
-              <![CDATA[Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
+              <![CDATA[Failure in scenario: null endpoint | Expected status code: 404 but got: 500 | Error Status: 500]]>
             </line>
             <line>
               <![CDATA[Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user]]>
@@ -779,7 +571,7 @@ at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:23 EDT" duration-ms="526" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:40 EDT" duration-ms="543" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -795,7 +587,7 @@ at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:24 EDT" duration-ms="743" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:41 EDT" duration-ms="693" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -811,7 +603,7 @@ at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:25 EDT" duration-ms="693" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:41 EDT" duration-ms="560" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -827,7 +619,7 @@ at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:25 EDT" duration-ms="514" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:42 EDT" duration-ms="509" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -851,7 +643,7 @@ Failure in scenario: firstName in integer | Expected status code: 400 but got: 4
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
-at ✽.Validate "400" and user validations for get request as "firstName in integer"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+at ✽.Validate "400" and user validations for get request as "firstName in integer"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
@@ -861,7 +653,7 @@ at ✽.Validate "400" and user validations for get request as "firstName in inte
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:26 EDT" duration-ms="574" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:42 EDT" duration-ms="598" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -885,7 +677,7 @@ Failure in scenario: empty firstName | Expected status code: 400 but got: 404
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
-at ✽.Validate "400" and user validations for get request as "empty firstName"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+at ✽.Validate "400" and user validations for get request as "empty firstName"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
@@ -895,7 +687,7 @@ at ✽.Validate "400" and user validations for get request as "empty firstName"(
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:26 EDT" duration-ms="173" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:43 EDT" duration-ms="204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -911,7 +703,7 @@ at ✽.Validate "400" and user validations for get request as "empty firstName"(
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:27 EDT" duration-ms="543" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:43 EDT" duration-ms="510" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -927,7 +719,7 @@ at ✽.Validate "400" and user validations for get request as "empty firstName"(
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:27 EDT" duration-ms="525" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:44 EDT" duration-ms="496" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -943,7 +735,7 @@ at ✽.Validate "400" and user validations for get request as "empty firstName"(
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:28 EDT" duration-ms="536" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:44 EDT" duration-ms="653" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -959,7 +751,7 @@ at ✽.Validate "400" and user validations for get request as "empty firstName"(
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:28 EDT" duration-ms="504" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:45 EDT" duration-ms="511" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -975,7 +767,7 @@ at ✽.Validate "400" and user validations for get request as "empty firstName"(
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:29 EDT" duration-ms="542" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:45 EDT" duration-ms="578" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -991,7 +783,7 @@ at ✽.Validate "400" and user validations for get request as "empty firstName"(
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:29 EDT" duration-ms="559" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:46 EDT" duration-ms="513" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1007,7 +799,7 @@ at ✽.Validate "400" and user validations for get request as "empty firstName"(
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:30 EDT" duration-ms="504" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:46 EDT" duration-ms="517" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1023,7 +815,7 @@ at ✽.Validate "400" and user validations for get request as "empty firstName"(
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:30 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:30 EDT" duration-ms="517" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:47 EDT" duration-ms="538" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1039,7 +831,7 @@ at ✽.Validate "400" and user validations for get request as "empty firstName"(
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:30 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:31 EDT" duration-ms="655" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:48 EDT" duration-ms="549" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1063,7 +855,7 @@ Failure in scenario: empty userid | Expected status code: 400 but got: 404
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 at stepdefinition.deletUsertest.validate_and_other_data_validations(deletUsertest.java:168)
-at ✽.Validate "400" and other data validations for scenario name as "empty userid"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/userAPI_RestAssured/src/test/resources/features/07_deleteUserByID.feature:17)
+at ✽.Validate "400" and other data validations for scenario name as "empty userid"(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/07_deleteUserByID.feature:17)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
@@ -1073,7 +865,7 @@ at ✽.Validate "400" and other data validations for scenario name as "empty use
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:31 EDT" duration-ms="172" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:48 EDT" duration-ms="159" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1089,7 +881,7 @@ at ✽.Validate "400" and other data validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:32 EDT" duration-ms="518" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:48 EDT" duration-ms="575" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1105,7 +897,7 @@ at ✽.Validate "400" and other data validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:32 EDT" duration-ms="508" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:49 EDT" duration-ms="533" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1121,7 +913,7 @@ at ✽.Validate "400" and other data validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:33 EDT" duration-ms="518" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:49 EDT" duration-ms="613" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1137,7 +929,7 @@ at ✽.Validate "400" and other data validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:33 EDT" duration-ms="554" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:50 EDT" duration-ms="491" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1153,7 +945,7 @@ at ✽.Validate "400" and other data validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-28T23:11:33 EDT" duration-ms="307" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:50 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-30T13:18:50 EDT" duration-ms="236" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1169,7 +961,7 @@ at ✽.Validate "400" and other data validations for scenario name as "empty use
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-28T23:11:33 EDT" name="tearDownClass" finished-at="2024-09-28T23:11:34 EDT" duration-ms="260" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.testrunner1@7642df8f]" started-at="2024-09-30T13:18:50 EDT" name="tearDownClass" finished-at="2024-09-30T13:18:50 EDT" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

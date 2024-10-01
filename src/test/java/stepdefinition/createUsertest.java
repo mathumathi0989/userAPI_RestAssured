@@ -32,19 +32,16 @@ public class createUsertest {
 
     private ConfigProperties config;
     private Response response;
-    private SoftAssert softAssert = new SoftAssert(); // Initialize SoftAssert
+    private SoftAssert softAssert = new SoftAssert(); 
     private String userId;
-    // Extent Reports
     private static ExtentReports extentReports;
     private ExtentTest extentTest;
 
-    // List to store user data from the POST response
     private List<Map<String, String>> storedUserData;
 
     public createUsertest() {
         config = new ConfigProperties();
         storedUserData = new ArrayList<>();
-        // Initialize ExtentReports
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("ExtentReports.html");
         extentReports = new ExtentReports();
         extentReports.attachReporter(htmlReporter);
@@ -62,7 +59,6 @@ public class createUsertest {
         List<Map<String, String>> allData = ExcelUtil.getAllExcelData(filePath, "POST");
 
         for (Map<String, String> data : allData) {
-            // Execute scenario for each row
             executeScenario(data);
             printStoredUserData();
         }
@@ -73,7 +69,6 @@ public class createUsertest {
         String scenarioName = data.get("scenario_name");
         System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!" + "Starting scenario: " + scenarioName + "!!!!!!!!!!!!!!!!!!!!!!!!!!");
 
-        // Create an ExtentTest for the scenario
         extentTest = extentReports.createTest(scenarioName);
         
         // Use data to form the request body
@@ -118,13 +113,11 @@ public class createUsertest {
         String errorStatus = response.jsonPath().getString("status");
         String errorMessage = response.jsonPath().getString("message");
 
-        // Print the actual status code and indicate if it does not match the expected status code
         if (actualStatusCode != expectedStatusCode) {
             String failureMessage = "Failure in scenario: " + scenarioName 
                 + " | Expected status code: " + expectedStatusCode 
                 + " but got: " + actualStatusCode;
 
-            // Append error status and error message if they are not null or empty
             if (errorStatus != null && !errorStatus.isEmpty()) {
                 failureMessage += " | Error Status: " + errorStatus;
             }
@@ -132,23 +125,19 @@ public class createUsertest {
                 failureMessage += " | Error Message: " + errorMessage;
             }
 
-            // Log failure in the report and console
             Reporter.log(failureMessage);
-            Allure.addAttachment("Failure Message", failureMessage); // Attach failure message to Allure
+            Allure.addAttachment("Failure Message", failureMessage); 
             
-         // Important: Log failure to ExtentReports
             if (extentTest != null) {
-                extentTest.fail(failureMessage); // Log to ExtentReports
+                extentTest.fail(failureMessage); 
             }
             
             System.out.println(failureMessage);
 
-            // Mark the test as failed in TestNG
             softAssert.fail(failureMessage);
         } else {
         	 String successMessage = "Success: Status code matched the expected value: " + expectedStatusCode;
-        	 // Log success in the ExtentReports
-             if (extentTest != null) {
+        	  if (extentTest != null) {
                  extentTest.pass(successMessage);
              }
              Allure.addAttachment("Success Message", successMessage); // Attach success message to Allure
@@ -229,7 +218,7 @@ public class createUsertest {
     @After
     public void tearDown() {
     	 softAssert.assertAll();
-        // Flush the ExtentReports at the end of the test suite
+        
         extentReports.flush();
     }
     

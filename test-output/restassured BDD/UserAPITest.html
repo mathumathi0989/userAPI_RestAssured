@@ -1,0 +1,530 @@
+<html>
+<head>
+<title>TestNG:  UserAPITest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UserAPITest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>41/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 30 10:54:20 EDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>88 seconds (88285 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"<br/>
+<a href="#Output-1964896876" onClick='toggleBox("Output-1964896876", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1964896876" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1964896876">
+Failure in scenario: empty userid | Expected status code: 400 but got: 404<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty userid | Expected status code: 400 but got: 404
+	at stepdefinition.getUserByIDtest.validate_user_and_other_validations_for_scenario_name_as(getUserByIDtest.java:165)
+	at ✽.Validate &quot;400&quot; and other user validations for scenario name as &quot;empty userid&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/04_getUserByID.feature:17)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1964896876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1964896876'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty userid | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.getUserByIDtest.validate_user_and_other_validations_for_scenario_name_as(getUserByIDtest.java:165)
+	at ✽.Validate &quot;400&quot; and other user validations for scenario name as &quot;empty userid&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/04_getUserByID.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate create user API with data from Excel", "Verify Create User API"<br/>
+<a href="#Output-2112921429" onClick='toggleBox("Output-2112921429", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2112921429" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2112921429">
+Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only<br/>
+Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number<br/>
+Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number<br/>
+Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number<br/>
+Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number<br/>
+Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number<br/>
+Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+	Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
+	at stepdefinition.createUsertest.tearDown(createUsertest.java:231)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2112921429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2112921429'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: valid all | Expected status code: 201 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: valid mandatory | Expected status code: 201 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+	Failure in scenario: firstname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: firstname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: firstname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as numbers | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: lastname as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: phoneNumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: phoneNumber as less than 10 | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: email as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as begin with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as end with special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: email as end with period | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same contact number,
+	Failure in scenario: plotnumber as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: plotnumber as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: plotnumber as string | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: street as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: state as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as number | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: country as special | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: zipcode as empty | Expected status code: 400 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id,
+	Failure in scenario: contentType | Expected status code: 415 but got: 409 | Error Status: 409 CONFLICT | Error Message: User already exist with same email id
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.createUsertest.tearDown(createUsertest.java:231)
+</pre></div></td>
+<td>25</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"<br/>
+<a href="#Output-1409390443" onClick='toggleBox("Output-1409390443", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1409390443" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1409390443">
+Failure in scenario: empty userid | Expected status code: 400 but got: 404<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty userid | Expected status code: 400 but got: 404
+	at stepdefinition.deletUsertest.validate_and_other_data_validations(deletUsertest.java:168)
+	at ✽.Validate &quot;400&quot; and other data validations for scenario name as &quot;empty userid&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/07_deleteUserByID.feature:17)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409390443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409390443'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty userid | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.deletUsertest.validate_and_other_data_validations(deletUsertest.java:168)
+	at ✽.Validate &quot;400&quot; and other data validations for scenario name as &quot;empty userid&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/07_deleteUserByID.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"<br/>
+<a href="#Output-783541000" onClick='toggleBox("Output-783541000", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-783541000" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-783541000">
+Failure in scenario: empty firstName | Expected status code: 400 but got: 404<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty firstName | Expected status code: 400 but got: 404
+	at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
+	at ✽.Validate &quot;400&quot; and user validations for get request as &quot;empty firstName&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace783541000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace783541000'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: empty firstName | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
+	at ✽.Validate &quot;400&quot; and user validations for get request as &quot;empty firstName&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate update user API with data from Excel", "Verify Update User API"<br/>
+<a href="#Output-769763645" onClick='toggleBox("Output-769763645", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-769763645" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-769763645">
+Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only<br/>
+Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user<br/>
+Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user<br/>
+Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user<br/>
+Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500<br/>
+Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200<br/>
+Failure in scenario: contentType | Expected status code: 415 but got: 200<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+	Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500,
+	Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200,
+	Failure in scenario: contentType | Expected status code: 415 but got: 200
+	at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace769763645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace769763645'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: valid mandatory | Expected status code: 200 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Plot number should contain alphaNumeric values only,
+	Failure in scenario: invalid endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: null endpoint | Expected status code: 404 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: phoneNumber as duplicate | Expected status code: 409 but got: 400 | Error Status: 400 BAD_REQUEST | Error Message: Contact number is already in use by another user,
+	Failure in scenario: email as duplicate | Expected status code: 409 but got: 500 | Error Status: 500,
+	Failure in scenario: zipcode as empty | Expected status code: 400 but got: 200,
+	Failure in scenario: contentType | Expected status code: 415 but got: 200
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.updateUsertest.tearDown(updateUsertest.java:305)
+</pre></div></td>
+<td>24</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"<br/>
+<a href="#Output-339692882" onClick='toggleBox("Output-339692882", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-339692882" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-339692882">
+Failure in scenario: firstName in integer | Expected status code: 400 but got: 404<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: firstName in integer | Expected status code: 400 but got: 404
+	at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
+	at ✽.Validate &quot;400&quot; and user validations for get request as &quot;firstName in integer&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace339692882", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace339692882'><pre>java.lang.AssertionError: The following asserts failed:
+	Failure in scenario: firstName in integer | Expected status code: 400 but got: 404
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepdefinition.getUserByFirstName.validate_user_and_user_validations_for_get_request_as(getUserByFirstName.java:164)
+	at ✽.Validate &quot;400&quot; and user validations for get request as &quot;firstName in integer&quot;(file:///Users/mathumathibalakrishnan/git/userAPI_RestAssured/src/test/resources/features/06_getUserByFirstName.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get All Users", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>6</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>2</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a user to test GET user by ID request", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create User", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>2</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "For Data Cleanup, Delete the user", "Verify Update User API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get User by First Name", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "For Get Request By FirstName data clean up, Delete the user", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get User by ID", "User API flow To test endpoints for creating, fetching, updating, and deleting users"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>1</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify API status", "Sample API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>1</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a user to test get user by FirstName request", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by firstName", "Verfiy get user by FirstName API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a user to test update request", "Verify Update User API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a user to test delete request", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list for DELETE requests", "Verfiy Delete users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user detail with GET request by ID", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user list with GET ALL requests", "Verfiy Get ALL users API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+<tr>
+<td title='runner.testrunner1.runScenario()'><b>runScenario</b><br>Test class: runner.testrunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "For Get Request By ID data clean up, Delete the user", "Verfiy GET user by ID API"</td>
+<td></td>
+<td>0</td>
+<td>runner.testrunner1@7642df8f</td></tr>
+</table><p>
+</body>
+</html>
